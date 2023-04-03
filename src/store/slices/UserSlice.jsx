@@ -18,7 +18,7 @@ const userSlice = createSlice({
         },
     },
 
-    // if we need one reducer who define mulitple slices then we will use extra reducer
+    // if we need one reducer who define mulitple slices then we will use extra reducers
     extraReducers(builder){ // builder parameter we got be default
        builder.addCase(userSlice.actions.clearAllUsers, () => {
         return [];
